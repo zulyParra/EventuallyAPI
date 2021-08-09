@@ -57,7 +57,107 @@ namespace EventuallyAPI.Data.Migrations
                         new
                         {
                             Id = 5,
-                            Name = "MOdelado 3D"
+                            Name = "Modelado 3D"
+                        });
+                });
+
+            modelBuilder.Entity("EventuallyAPI.Core.Entities.Comunity", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("AreaId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Banner")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Logo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("OtherArea")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AreaId");
+
+                    b.ToTable("Comunities");
+                });
+
+            modelBuilder.Entity("EventuallyAPI.Core.Entities.ComunitySocialNetwork", b =>
+                {
+                    b.Property<int>("ComunityId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SocialNetworkId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Value")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ComunityId", "SocialNetworkId");
+
+                    b.HasIndex("SocialNetworkId");
+
+                    b.ToTable("ComunitySocialNetworks");
+                });
+
+            modelBuilder.Entity("EventuallyAPI.Core.Entities.SocialNetwork", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("SocialNetworks");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Facebook"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Linkedin"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Github"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Name = "Twitter"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Name = "Instagram"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Name = "Discord"
                         });
                 });
 
@@ -270,6 +370,36 @@ namespace EventuallyAPI.Data.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens");
+                });
+
+            modelBuilder.Entity("EventuallyAPI.Core.Entities.Comunity", b =>
+                {
+                    b.HasOne("EventuallyAPI.Core.Entities.Area", "Area")
+                        .WithMany()
+                        .HasForeignKey("AreaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Area");
+                });
+
+            modelBuilder.Entity("EventuallyAPI.Core.Entities.ComunitySocialNetwork", b =>
+                {
+                    b.HasOne("EventuallyAPI.Core.Entities.Comunity", "Comunity")
+                        .WithMany()
+                        .HasForeignKey("ComunityId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EventuallyAPI.Core.Entities.SocialNetwork", "SocialNetwork")
+                        .WithMany()
+                        .HasForeignKey("SocialNetworkId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Comunity");
+
+                    b.Navigation("SocialNetwork");
                 });
 
             modelBuilder.Entity("EventuallyAPI.Core.Entities.UserArea", b =>

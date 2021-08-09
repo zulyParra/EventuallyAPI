@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "F:\\workspace.Net\\EventuallyAPI\\EventuallyAPI\\EventuallyAPI.csproj": {}
+    "C:\\Users\\Crisla\\Documents\\Repos\\EventuallyAPIZuly\\EventuallyAPI\\EventuallyAPI.csproj": {}
   },
   "projects": {
-    "F:\\workspace.Net\\EventuallyAPI\\EventuallyAPI.Core\\EventuallyAPI.Core.csproj": {
+    "C:\\Users\\Crisla\\Documents\\Repos\\EventuallyAPIZuly\\EventuallyAPI.Core\\EventuallyAPI.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\workspace.Net\\EventuallyAPI\\EventuallyAPI.Core\\EventuallyAPI.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Crisla\\Documents\\Repos\\EventuallyAPIZuly\\EventuallyAPI.Core\\EventuallyAPI.Core.csproj",
         "projectName": "EventuallyAPI.Core",
-        "projectPath": "F:\\workspace.Net\\EventuallyAPI\\EventuallyAPI.Core\\EventuallyAPI.Core.csproj",
-        "packagesPath": "C:\\Users\\DELL_COREI5\\.nuget\\packages\\",
-        "outputPath": "F:\\workspace.Net\\EventuallyAPI\\EventuallyAPI.Core\\obj\\",
+        "projectPath": "C:\\Users\\Crisla\\Documents\\Repos\\EventuallyAPIZuly\\EventuallyAPI.Core\\EventuallyAPI.Core.csproj",
+        "packagesPath": "C:\\Users\\Crisla\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Crisla\\Documents\\Repos\\EventuallyAPIZuly\\EventuallyAPI.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\DELL_COREI5\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Crisla\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -46,6 +44,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.8, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.8, )"
@@ -84,24 +86,22 @@
         }
       }
     },
-    "F:\\workspace.Net\\EventuallyAPI\\EventuallyAPI.Data\\EventuallyAPI.Data.csproj": {
+    "C:\\Users\\Crisla\\Documents\\Repos\\EventuallyAPIZuly\\EventuallyAPI.Data\\EventuallyAPI.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\workspace.Net\\EventuallyAPI\\EventuallyAPI.Data\\EventuallyAPI.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Crisla\\Documents\\Repos\\EventuallyAPIZuly\\EventuallyAPI.Data\\EventuallyAPI.Data.csproj",
         "projectName": "EventuallyAPI.Data",
-        "projectPath": "F:\\workspace.Net\\EventuallyAPI\\EventuallyAPI.Data\\EventuallyAPI.Data.csproj",
-        "packagesPath": "C:\\Users\\DELL_COREI5\\.nuget\\packages\\",
-        "outputPath": "F:\\workspace.Net\\EventuallyAPI\\EventuallyAPI.Data\\obj\\",
+        "projectPath": "C:\\Users\\Crisla\\Documents\\Repos\\EventuallyAPIZuly\\EventuallyAPI.Data\\EventuallyAPI.Data.csproj",
+        "packagesPath": "C:\\Users\\Crisla\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Crisla\\Documents\\Repos\\EventuallyAPIZuly\\EventuallyAPI.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\DELL_COREI5\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Crisla\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -114,8 +114,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "F:\\workspace.Net\\EventuallyAPI\\EventuallyAPI.Core\\EventuallyAPI.Core.csproj": {
-                "projectPath": "F:\\workspace.Net\\EventuallyAPI\\EventuallyAPI.Core\\EventuallyAPI.Core.csproj"
+              "C:\\Users\\Crisla\\Documents\\Repos\\EventuallyAPIZuly\\EventuallyAPI.Core\\EventuallyAPI.Core.csproj": {
+                "projectPath": "C:\\Users\\Crisla\\Documents\\Repos\\EventuallyAPIZuly\\EventuallyAPI.Core\\EventuallyAPI.Core.csproj"
               }
             }
           }
@@ -168,24 +168,22 @@
         }
       }
     },
-    "F:\\workspace.Net\\EventuallyAPI\\EventuallyAPI.Infraestructure\\EventuallyAPI.Infraestructure.csproj": {
+    "C:\\Users\\Crisla\\Documents\\Repos\\EventuallyAPIZuly\\EventuallyAPI.Infraestructure\\EventuallyAPI.Infraestructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\workspace.Net\\EventuallyAPI\\EventuallyAPI.Infraestructure\\EventuallyAPI.Infraestructure.csproj",
+        "projectUniqueName": "C:\\Users\\Crisla\\Documents\\Repos\\EventuallyAPIZuly\\EventuallyAPI.Infraestructure\\EventuallyAPI.Infraestructure.csproj",
         "projectName": "EventuallyAPI.Infraestructure",
-        "projectPath": "F:\\workspace.Net\\EventuallyAPI\\EventuallyAPI.Infraestructure\\EventuallyAPI.Infraestructure.csproj",
-        "packagesPath": "C:\\Users\\DELL_COREI5\\.nuget\\packages\\",
-        "outputPath": "F:\\workspace.Net\\EventuallyAPI\\EventuallyAPI.Infraestructure\\obj\\",
+        "projectPath": "C:\\Users\\Crisla\\Documents\\Repos\\EventuallyAPIZuly\\EventuallyAPI.Infraestructure\\EventuallyAPI.Infraestructure.csproj",
+        "packagesPath": "C:\\Users\\Crisla\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Crisla\\Documents\\Repos\\EventuallyAPIZuly\\EventuallyAPI.Infraestructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\DELL_COREI5\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Crisla\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -210,6 +208,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Hosting": {
+              "target": "Package",
+              "version": "[2.2.7, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.8, )"
@@ -248,24 +254,22 @@
         }
       }
     },
-    "F:\\workspace.Net\\EventuallyAPI\\EventuallyAPI\\EventuallyAPI.csproj": {
+    "C:\\Users\\Crisla\\Documents\\Repos\\EventuallyAPIZuly\\EventuallyAPI\\EventuallyAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\workspace.Net\\EventuallyAPI\\EventuallyAPI\\EventuallyAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Crisla\\Documents\\Repos\\EventuallyAPIZuly\\EventuallyAPI\\EventuallyAPI.csproj",
         "projectName": "EventuallyAPI",
-        "projectPath": "F:\\workspace.Net\\EventuallyAPI\\EventuallyAPI\\EventuallyAPI.csproj",
-        "packagesPath": "C:\\Users\\DELL_COREI5\\.nuget\\packages\\",
-        "outputPath": "F:\\workspace.Net\\EventuallyAPI\\EventuallyAPI\\obj\\",
+        "projectPath": "C:\\Users\\Crisla\\Documents\\Repos\\EventuallyAPIZuly\\EventuallyAPI\\EventuallyAPI.csproj",
+        "packagesPath": "C:\\Users\\Crisla\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Crisla\\Documents\\Repos\\EventuallyAPIZuly\\EventuallyAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\DELL_COREI5\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Crisla\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -278,14 +282,14 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "F:\\workspace.Net\\EventuallyAPI\\EventuallyAPI.Core\\EventuallyAPI.Core.csproj": {
-                "projectPath": "F:\\workspace.Net\\EventuallyAPI\\EventuallyAPI.Core\\EventuallyAPI.Core.csproj"
+              "C:\\Users\\Crisla\\Documents\\Repos\\EventuallyAPIZuly\\EventuallyAPI.Core\\EventuallyAPI.Core.csproj": {
+                "projectPath": "C:\\Users\\Crisla\\Documents\\Repos\\EventuallyAPIZuly\\EventuallyAPI.Core\\EventuallyAPI.Core.csproj"
               },
-              "F:\\workspace.Net\\EventuallyAPI\\EventuallyAPI.Data\\EventuallyAPI.Data.csproj": {
-                "projectPath": "F:\\workspace.Net\\EventuallyAPI\\EventuallyAPI.Data\\EventuallyAPI.Data.csproj"
+              "C:\\Users\\Crisla\\Documents\\Repos\\EventuallyAPIZuly\\EventuallyAPI.Data\\EventuallyAPI.Data.csproj": {
+                "projectPath": "C:\\Users\\Crisla\\Documents\\Repos\\EventuallyAPIZuly\\EventuallyAPI.Data\\EventuallyAPI.Data.csproj"
               },
-              "F:\\workspace.Net\\EventuallyAPI\\EventuallyAPI.Infraestructure\\EventuallyAPI.Infraestructure.csproj": {
-                "projectPath": "F:\\workspace.Net\\EventuallyAPI\\EventuallyAPI.Infraestructure\\EventuallyAPI.Infraestructure.csproj"
+              "C:\\Users\\Crisla\\Documents\\Repos\\EventuallyAPIZuly\\EventuallyAPI.Infraestructure\\EventuallyAPI.Infraestructure.csproj": {
+                "projectPath": "C:\\Users\\Crisla\\Documents\\Repos\\EventuallyAPIZuly\\EventuallyAPI.Infraestructure\\EventuallyAPI.Infraestructure.csproj"
               }
             }
           }

@@ -1,6 +1,7 @@
 using EventuallyAPI.Core.Entities;
 using EventuallyAPI.Data;
 using EventuallyAPI.Infraestructure.Utils;
+using EventuallyAPI.Services;
 
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
@@ -31,7 +32,7 @@ namespace EventuallyAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            
             services.AddControllers();
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -68,6 +69,8 @@ namespace EventuallyAPI
                 options.AddPolicy("develop", corsPolicy.Build());
             });
 
+            services.AddScoped<IFileStorage, FileStorageInLocal>();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "EventuallyAPI", Version = "v1" });
@@ -87,7 +90,7 @@ namespace EventuallyAPI
             app.UseHttpsRedirection();
 
             app.UseRouting();
-
+            app.UseStaticFiles();
             app.UseCors("develop");
 
             app.UseAuthentication();

@@ -1,5 +1,9 @@
+using EventuallyAPI.Data;
+
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System;
@@ -13,7 +17,17 @@ namespace EventuallyAPI
     {
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            var webhost = CreateHostBuilder(args).Build();
+            using var scope = webhost.Services.CreateScope();
+            using var dbContext = scope.ServiceProvider.GetRequiredService<ApplicationDBContext>();
+
+            if (dbContext != null)
+            {
+                dbContext.Database.Migrate();
+            }
+            
+
+            webhost.Run();
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

@@ -37,7 +37,7 @@ namespace EventuallyAPI.Data
                 Name = "Animacion 3D"
             }, new Area {
                 Id = 5,
-                Name = "MOdelado 3D"
+                Name = "Modelado 3D"
             });
         }
 

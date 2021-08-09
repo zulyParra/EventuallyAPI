@@ -88,7 +88,7 @@ namespace EventuallyAPI
 
             app.UseRouting();
 
-            app.UseCors();
+            app.UseCors("develop");
 
             app.UseAuthentication();
 
